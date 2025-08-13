@@ -65,7 +65,7 @@ We now compare the performance of the Logistic Regression model with the KNN alg
 | Logistic Regression  | 0.1166              | 0.8875              | 0.8865              |   
 | Decision Tree        | 0.1542              | 0.8915      	       | 0.8818              |
 | KNN                  | 7.8325              | 0.8817              | 0.8773              |
-| SVM                  |  13.6826            | 0.8877              |   0.8864            |                         
+| SVM                  | 13.6826             | 0.8877              | 0.8864              |                         
 
 The comparison results show that Logistic Regression outperformed the other models, recording the highest training and testing accuracy, while also achieving the lowest training time in seconds.
 
@@ -74,12 +74,15 @@ To improve model performance beyond the baseline results, several strategies wer
 - Feature engineering and exploration: examined the impact of individual features and considered whether to keep or remove certain variables
 - Hyperparameter tuning: Used Grid Search to test different parameter combinations and evaluate performance metrics, such as adjusting the number of neighbors in KNN or the maximum depth in a Decision Tree.
 - Performance metric adjustment: Selected evaluation metrics that align with the project’s goals. For imbalanced datasets, accuracy can be misleading, so metrics like recall, precision, F1-score, or ROC AUC may provide a better measure of performance.
- | Model Name           | Train Time(s)      | Best CV Score       | 	      
+  
+| Model Name           | Train Time(s)       | Best CV Score       | 	      
 |--------------------- |:--------------------|:--------------------|
 | Logistic Regression  | 9.4242              | 0.8876              | 
 | Decision Tree        | 9.5872              | 0.8876      	       | 
 | KNN                  | 239.7218            | 0.8863              | 
-| SVM                  |  13.6826            | 0.8877              |  
+| SVM                  | 96.5406             | 0.8876              |  
+
+Logistic Regression, Decision Tree, and Support Vector Machine achieved the highest accuracy scores, each with their optimal parameters, while KNN recorded the lowest. All models achieved accuracy above 85%.
 
 ## Next Steps and Recommendations
 The main concern is the dataset’s imbalance, which is heavily weighted toward unsuccessful marketing campaigns. If the goal is to identify the features that contribute to campaign failures, the current models could still be useful. The imbalance is fine if the aim is to understand why campaigns fail, but if the goal is to predict successes, the imbalance would be a bigger problem.
