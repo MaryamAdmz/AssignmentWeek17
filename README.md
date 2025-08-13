@@ -14,6 +14,8 @@ The goal of this machine learning project is to find the key factors that improv
 -How does the contact method (i.e., cellular) affect the success rate for long-term loan products?
 
 ## Understanding the Data
+This data comes to us from the UCI Machine Learning repository;  it has 41188 observations with 21 features.
+
 The dataset was checked for missing or problematic values, and none were found. Key features such as job, marital status, education, housing, and personal loans were reviewed to assess their potential impact on customer response and the success of the marketing campaign.
 The charts below visualize key observations from the dataset. One of the most noticeable findings is the low overall success rate of the marketing campaign in persuading customers to sign up for the long-term deposit product, regardless of features such as education, marital status, job, or contact method.
 
@@ -71,3 +73,17 @@ We now compare the performance of the Logistic Regression model with the KNN alg
 
 The comparison results show that Logistic Regression outperformed the other models, recording the highest training and testing accuracy, while also achieving the lowest training time in seconds.
 
+## Improving the Model
+To improve model performance beyond the baseline results, several strategies were explored:
+- Feature engineering and exploration: examined the impact of individual features and considered whether to keep or remove certain variables
+- Hyperparameter tuning: Used Grid Search to test different parameter combinations and evaluate performance metrics, such as adjusting the number of neighbors in KNN or the maximum depth in a Decision Tree.
+- Performance metric adjustment: Selected evaluation metrics that align with the project’s goals. For imbalanced datasets, accuracy can be misleading, so metrics like recall, precision, F1-score, or ROC AUC may provide a better measure of performance.
+ | Model Name           | Train Time(s)      | Best CV Score       | 	      
+|--------------------- |:--------------------|:--------------------|
+| Logistic Regression  | 9.4242              | 0.8876              | 
+| Decision Tree        | 9.5872              | 0.8876      	       | 
+| KNN                  | 239.7218            | 0.8863              | 
+| SVM                  |  13.6826            | 0.8877              |  
+
+## Next Steps and Recommendations
+The main concern is the dataset’s imbalance, which is heavily weighted toward unsuccessful marketing campaigns. If the goal is to identify the features that contribute to campaign failures, the current models could still be useful. The imbalance is fine if the aim is to understand why campaigns fail, but if the goal is to predict successes, the imbalance would be a bigger problem.
