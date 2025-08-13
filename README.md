@@ -62,12 +62,12 @@ For this model, the curve for Deposit = Yes is closer to the top-left corner tha
 ![plot1](figures/roc_curve.png)
 ## Model Comparisons
 We now compare the performance of the Logistic Regression model with the KNN algorithm, Decision Tree, and SVM models. Using the default settings for each, we fit and score the models, then compare their training times.
-| Model Name    | Accuracy       | Precision      | Recall 	      | F1_Score       | 
-|-------------	 |:---------------|:---------------|:--------------|:---------------|
-| Logistic Regression | 0.8863         | 0.4432         | 0.4999        |  0.4699        | 
-| Model Name    | Accuracy       | Precision      | Recall 	      | F1_Score       | 
-|	 |:---------------|:---------------|:--------------|:---------------|
-| Decision Tree | 0.8863         | 0.4432         | 0.4999        |  0.4699        | 
-```json{"Model":"Logistic Regression","Train Time(s)":"0.1166","Train Accuracy":"0.8875","Test Accuracy":"0.8865"},{"Model":"KNN","Train Time(s)":"7.8325","Train Accuracy":"0.8817","Test Accuracy":"0.8773"},{"Model":"Decision Tree","Train Time(s)":"0.1542","Train Accuracy":"0.8915","Test Accuracy":"0.8818"},{"Model":"SVM","Train Time(s)":"13.6826","Train Accuracy":"0.8877","Test Accuracy":"0.8864"}
+| Model Name           | Train Time(s)       | Train Accuracy      | Test Accuracy	     | 
+|--------------------- |:--------------------|:--------------------|:--------------------|
+| Logistic Regression  | 0.1166              | 0.8875              | 0.8865              |   
+| Decision Tree        | 0.1542              | 0.8915      	       | 0.8818              |
+| KNN                  | 7.8325              | 0.8817              | 0.8773              |
+| SVM                  |  13.6826            | 0.8877              |   0.8864            |                         
+
 The comparison results show that Logistic Regression outperformed the other models, recording the highest training and testing accuracy, while also achieving the lowest training time in seconds.
 
