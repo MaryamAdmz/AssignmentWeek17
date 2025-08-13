@@ -47,7 +47,8 @@ In training, fitting and predicting the model on the dataset, the following resu
 | Model Name    | Accuracy       | Precision      | Recall 	      | F1_Score       | 
 |-------------	 |:---------------|:---------------|:--------------|:---------------|
 | Decision Tree | 0.8863         | 0.4432         | 0.4999        |  0.4699        | 
- These result shows that the accuracy score was very close with number over 85%, however the recall, precision and F1_Score were below 50%.
+
+These result shows that the accuracy score was very close with number over 85%, however the recall, precision and F1_Score were below 50%.
 
 This suggests that the classifier produced a high number of false negatives, meaning many actual positive cases (Deposit = "Yes") were misclassified as negative. Such an outcome is often due to an imbalanced dataset, where the number of "No" records greatly exceeds the number of "Yes" records, though it can also result from untuned model hyperparameters. In this case, the imbalance is the more likely cause.
 
