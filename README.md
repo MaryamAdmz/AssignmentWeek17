@@ -1,4 +1,4 @@
-### Comparing Classifiers
+# Comparing Classifiers
 This project compares the performance of four classifiers: Logistic Regression, K-Nearest Neighbors, Decision Tree,
 and Support Vector Machine (SVM). We use a dataset related to the marketing of bank products conducted via 
 telephone, obtained from the UCI Machine Learning Repository.
@@ -17,7 +17,7 @@ The goal of this machine learning project is to find the key factors that improv
 The dataset was checked for missing or problematic values, and none were found. Key features such as job, marital status, education, housing, and personal loans were reviewed to assess their potential impact on customer response and the success of the marketing campaign.
 The charts below visualize key observations from the dataset. One of the most noticeable findings is the low overall success rate of the marketing campaign in persuading customers to sign up for the long-term deposit product, regardless of features such as education, marital status, job, or contact method.
 ![plot1](figures/y_distribution.png)
- # Detailed Insights
+ ### Detailed Insights
 When focusing only on customers who subscribed to the product (i.e., successful campaigns), the following patterns emerge:
 -Marital Status – Higher success rates among married customers, followed by single individuals.
 -Job – The campaign performed best with customers in administrative roles (a broad category), followed by technicians, and then blue-collar workers.
