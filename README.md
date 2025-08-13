@@ -10,16 +10,8 @@ For a detailed description of the dataset and its features, we refer to the acco
 provided in the repository.
 The goal of this machine learning project is to find the key factors that improve customer success rates.  
 
-
-
-
-For example:
--Do loan products have a positive impact on the customer success rate? For example, should we focus on customers with housing loans?
--Are we going to have a better success rate with customers with a university degree?
--How does the contact method (i.e., cellular) affect the success rate for long-term loan products?
-
 ## Understanding the Data
-This data comes to us from the UCI Machine Learning repository;  it has 41188 observations with 21 features.
+This dataset contains 41,188 observations with 21 features.
 
 The dataset was checked for missing or problematic values, and none were found. Key features such as job, marital status, education, housing, and personal loans were reviewed to assess their potential impact on customer response and the success of the marketing campaign.
 The charts below visualize key observations from the dataset. One of the most noticeable findings is the low overall success rate of the marketing campaign in persuading customers to sign up for the long-term deposit product, regardless of features such as education, marital status, job, or contact method.
