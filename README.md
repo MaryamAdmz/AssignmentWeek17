@@ -8,13 +8,12 @@ This project compares the performance of four classifiers:
 The dataset, obtained from the UCI Machine Learning Repository, related to the marketing of bank products conducted via telephone. It comes from a Portuguese banking institution and contains the results of multiple marketing campaigns, including customer information, campaign details, and whether the client subscribed to a term deposit.
 For a detailed description of the dataset and its features, we refer to the accompanying research article
 provided in the repository.
-The goal of this machine learning project is to find the key factors that improve customer success rates.  
 
 ## Understanding the Data
 This dataset contains 41,188 observations with 21 features.
 
 The dataset was checked for missing or problematic values, and none were found. Key features such as job, marital status, education, housing, and personal loans were reviewed to assess their potential impact on customer response and the success of the marketing campaign.
-The charts below visualize key observations from the dataset. One of the most noticeable findings is the low overall success rate of the marketing campaign in persuading customers to sign up for the long-term deposit product, regardless of features such as education, marital status, job, or contact method.
+The charts below visualize key observations from the dataset. One of the most notable findings is the low overall success rate of the marketing campaign in persuading customers to sign up for the long-term deposit product, regardless of features such as education, marital status, job, or contact method.
 
 ### Detailed Insights
 When focusing only on customers who subscribed to the product (i.e., successful campaigns), the following patterns emerge:
