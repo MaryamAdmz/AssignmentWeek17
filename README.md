@@ -27,9 +27,9 @@ When focusing only on customers who subscribed to the product (i.e., successful 
 ![plot1](figures/contact_distribution.png)
 ## Understanding the Task
 The goal of this machine learning project is to find the key factors that improve customer success rates.  For example:
--Do loan products have a positive impact on the customer success rate? For example, should we focus on customers with housing loans?
--Are we going to have a better success rate with customers with a university degree?
--How does the contact method (i.e., cellular) affect the success rate for long-term loan products?
+ - Do loan products have a positive impact on the customer success rate? For example, should we focus on customers with housing loans?
+ - Are we going to have a better success rate with customers with a university degree?
+ - How does the contact method (i.e., cellular) affect the success rate for long-term loan products?
 ## Engineering Features
 Apart from addressing the imbalanced nature of the dataset, the following steps were taken to prepare the data for modeling:
  - Selected features: job, marital, education, default, housing, loan, and contact to create the feature set.
