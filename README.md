@@ -19,9 +19,9 @@ The charts below visualize key observations from the dataset. One of the most no
 ![plot1](figures/y_distribution.png)
  ### Detailed Insights
 When focusing only on customers who subscribed to the product (i.e., successful campaigns), the following patterns emerge:
--Marital Status – Higher success rates among married customers, followed by single individuals.
--Job – The campaign performed best with customers in administrative roles (a broad category), followed by technicians, and then blue-collar workers.
--Contact Method – Marketing efforts were more successful when using cellular contact compared to telephone.
+-Marital Status: higher success rates among married customers, followed by single individuals.
+-Job: campaign performed best with customers in administrative roles (a broad category), followed by technicians, and then blue-collar workers.
+-Contact Method: marketing efforts were more successful when using cellular contact compared to telephone.
 ![plot1](figures/marital_distribution.png)
 ![plot1](figures/job_distribution.png)
 ![plot1](figures/contact_distribution.png)
