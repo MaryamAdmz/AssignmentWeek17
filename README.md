@@ -55,8 +55,19 @@ This suggests that the classifier produced a high number of false negatives, mea
 For a detailed breakdown of the model’s performance, the confusion matrix is shown below, illustrating the distribution of true positives, true negatives, false positives, and false negatives.
 ![plot1](figures/confusion_mat_distribution.png)
 
-## Simple Model
+## Simple Model/Score the Model
 We use Logistic Regression to build a basic model on our data. Several metrics can be used to evaluate how well a Logistic Regression model fits the dataset, including sensitivity  and specificity. A useful way to visualize these metrics is with a ROC Curve, which plots sensitivity against 1 − specificity. In the ROC plot, a curve closer to the top-left corner indicates better performance.
 
 For this model, the curve for Deposit = Yes is closer to the top-left corner than Deposit = No, suggesting stronger performance in identifying positive cases. The ROC AUC score is 0.6890, which is above 0.5, meaning the classifier correctly identifies more true positives and true negatives than false negatives and false positives.
-![plot1](figures/roc_curve_distribution.png)
+![plot1](figures/roc_curve.png)
+## Model Comparisons
+We now compare the performance of the Logistic Regression model with the KNN algorithm, Decision Tree, and SVM models. Using the default settings for each, we fit and score the models, then compare their training times.
+| Model Name    | Accuracy       | Precision      | Recall 	      | F1_Score       | 
+|-------------	 |:---------------|:---------------|:--------------|:---------------|
+| Logistic Regression | 0.8863         | 0.4432         | 0.4999        |  0.4699        | 
+| Model Name    | Accuracy       | Precision      | Recall 	      | F1_Score       | 
+|	 |:---------------|:---------------|:--------------|:---------------|
+| Decision Tree | 0.8863         | 0.4432         | 0.4999        |  0.4699        | 
+```json{"Model":"Logistic Regression","Train Time(s)":"0.1166","Train Accuracy":"0.8875","Test Accuracy":"0.8865"},{"Model":"KNN","Train Time(s)":"7.8325","Train Accuracy":"0.8817","Test Accuracy":"0.8773"},{"Model":"Decision Tree","Train Time(s)":"0.1542","Train Accuracy":"0.8915","Test Accuracy":"0.8818"},{"Model":"SVM","Train Time(s)":"13.6826","Train Accuracy":"0.8877","Test Accuracy":"0.8864"}
+The comparison results show that Logistic Regression outperformed the other models, recording the highest training and testing accuracy, while also achieving the lowest training time in seconds.
+
