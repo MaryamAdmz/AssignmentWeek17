@@ -41,5 +41,11 @@ Apart from addressing the imbalanced nature of the dataset, the following steps 
 
 
 
-## Engineering Features
+## Baseline Model
+For the baseline model, we chose a DecisionTreeClassifier, a method capable of performing multi-class classification. This classifier works by applying different feature subsets and decision rules at various stages of classification.
+In training, fitting and predicting the model on the dataset, the following results were observed:
+| Model Name    | Accuracy       | Precision      | Recall 	      | F1_Score       | 
+|-------------	 |:---------------|:---------------|:--------------|:---------------|
+| Decision Tree | 0.8863         | 0.4432         | 0.4999        |  0.4699        | 
+
 
