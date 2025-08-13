@@ -58,4 +58,5 @@ For a detailed breakdown of the model’s performance, the confusion matrix is s
 ## Simple Model
 We use Logistic Regression to build a basic model on our data. Several metrics can be used to evaluate how well a Logistic Regression model fits the dataset, including sensitivity  and specificity. A useful way to visualize these metrics is with a ROC Curve, which plots sensitivity against 1 − specificity. In the ROC plot, a curve closer to the top-left corner indicates better performance.
 
-For this model, the curve for Deposit = Yes is closer to the top-left corner than Deposit = No, suggesting stronger performance in identifying positive cases. The ROC AUC score is 0.6890, which is above 0.5, meaning the classifier correctly identifies more true positives and true negatives than false negatives and false positives
+For this model, the curve for Deposit = Yes is closer to the top-left corner than Deposit = No, suggesting stronger performance in identifying positive cases. The ROC AUC score is 0.6890, which is above 0.5, meaning the classifier correctly identifies more true positives and true negatives than false negatives and false positives.
+![plot1](figures/roc_curve_distribution.png)
